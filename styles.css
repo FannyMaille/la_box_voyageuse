@@ -2,6 +2,44 @@
 /* Réinitialisation de certains paramètres */
 * {
   box-sizing: border-box;
+  font-family: 'barlow';
+  line-height: 140%;
+}
+
+@font-face {
+  font-family: 'barlow';
+  font-style: normal;
+  src: url('police/Barlow/Barlow-Regular.ttf')
+}
+
+@font-face {
+  font-family: 'barlow medium';
+  font-style: medium;
+  src: url('police/Barlow/Barlow-Medium.ttf')
+}
+
+@font-face {
+  font-family: 'barlow bold';
+  font-style: bold;
+  src: url('police/Barlow/Barlow-Bold.ttf')
+}
+
+@font-face {
+  font-family: 'barlow extrabold';
+  font-style: extrabold;
+  src: url('police/Barlow/Barlow-ExtraBold.ttf')
+}
+
+@font-face {
+  font-family: 'barlow italic';
+  font-style: italic;
+  src: url('police/Barlow/Barlow-Italic.ttf')
+}
+
+@font-face {
+  font-family: 'barlow black';
+  font-style: black;
+  src: url('police/Barlow/Barlow-Black.ttf')
 }
 
 /* Réinitialisation de certains paramètres */
@@ -14,10 +52,9 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-right: 15vw;
-  padding-left: 15vw;
+  padding-right: 10vw;
+  padding-left: 10vw;
   text-align: center;
-  line-height: 140%;
   padding-top: 5vh;
   padding-bottom: 8vh;
 }
@@ -33,14 +70,26 @@ body{
   padding-bottom: 8vh;
 }
 
-h3,h1,h4,h5{
+h3,h1,h4,h5,h6{
   text-transform: uppercase;
+  font-family: 'barlow bold';
 }
 h1{
   margin-top: 8vh;
+  font-size: 30px;
 }
 h2{
   margin-top: 0;
+  font-size: 18px;
+}
+h3{
+  font-size: 24px;
+}
+h6{
+  font-size: 18px;
+}
+p{
+  font-size: 14px;
 }
 
 #menu{
@@ -97,6 +146,7 @@ h2{
   color: white;
   text-decoration: none;
   text-transform: uppercase;
+  font-family: 'barlow extrabold';
 }
 /* BONTON S'ABONNER */
 
@@ -144,9 +194,11 @@ h2{
 }
 #concept figcaption, #cusinequalite figcaption{
   color: #FF9900;
+  font-family: 'barlow bold';
 }
 #rassurer figcaption{
   color:white;
+  font-family: 'barlow bold';
 }
 
 .rondsimg{
@@ -262,7 +314,7 @@ h2{
   min-height: 66vh;
 }
 .imgeequipe{
-  width: 100%;
+  width: 80%;
   border-radius: 50%;
   margin-top: 2vh;
   margin-bottom: 3vh;
@@ -321,8 +373,45 @@ hr{
 #basdepage{
   background-color:white;
   min-height: 52vh;
+  align-items: flex-start;
 }
 
-#basdepage h5{
-  text-align: left;
+#titresdansfooter{
+  width: 100%;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.titrefooter{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: black 1px solid;
+  padding-bottom: 3vh;
+  padding-top: 3vh;
+}
+
+.titrefooter h6{
+  margin: 0;
+}
+
+#abonnernewsletter{
+  display: flex;
+  height: 7vh;
+  width: 100%;
+}
+
+#email{
+  background-color: #D6C5AD;
+  border: none;
+  width: 85%;
+  padding-left: 15px;
+}
+
+#envoyer{
+  background-color: #FF9900;
+  color: white;
+  border: none;
+  width: 15%;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
 }
