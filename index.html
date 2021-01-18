@@ -82,13 +82,21 @@
       <p>Chaque mois une box vous transporte culinairement vers une destination SUPRISE !</p>
       <img class="imageinterrieur" src="images/interrieur.png" alt="Contenu de la box">
       <p>Optez pour l’ABONNEMENT : Pour préparer un repas original et complet pour 4 personnes afin de voyager depuis chez soi 1 fois par mois ! </p>
-      <ul>
-        <li>5 à 7 produits de qualité du pays à l'honneur pour un repas complet et savoureux</li>
-        <li>Un livret de recettes authentiques et faciles pour cuisiner les produits de votre box</li>
-        <li>Le portrait et les petits secrets de cuisine d'un Grand Chef de ce pays pour vous accompagner</li>
-        <li>Des anecdotes et coutumes sur la gastronomie du pays à l'honneur</li>
+      <ul id="listecontenu">
+        <li>
+          <p>5 à 7 produits de qualité du pays à l'honneur pour un repas complet et savoureux</p>
+        </li>
+        <li>
+          <p>Un livret de recettes authentiques et faciles pour cuisiner les produits de votre box</p>
+        </li>
+        <li>
+          <p>Le portrait et les petits secrets de cuisine d'un Grand Chef de ce pays pour vous accompagner</p>
+        </li>
+        <li>
+          <p>Des anecdotes et coutumes sur la gastronomie du pays à l'honneur</p>
+        </li>
       </ul>
-      <a href="">Voir les anciennes boxs</a>
+      <a href="" class="autresboxs"><i class="fas fa-plus-circle"></i>Voir les anciennes boxs</a>
       <ul id="listedesprix">
         <li>
           <p>1 mois</p> 
@@ -152,15 +160,15 @@
     </div>
     </section>
 
-    <section class="section" id="dernnierebox">
+    <section class="sectioncarroussel" id="dernnierebox">
       <h3>Les boxs des 3 derniers mois</h3>
       <p>Encore disponible à l'unité</p>
       <div>
         <article class="troisbox">
-          <img>Image
-          <h5>La box Voyageuse Spécial Maroc</h5>
-          <div>
-            <div>
+          <img class="imgdestroisboxs" src="images/Maroc.png" alt="Box du maroc">
+          <h5 class="titresboxs">La box Voyageuse Spécial Maroc</h5>
+          <div class="nombreavis">
+            <div class="notesetoiles">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -169,8 +177,8 @@
             </div>
             <a href="">26 avis</a>
           </div>
-          <p>30,00 €</p>
-          <p>Maroc</p>
+          <p class="prixdesbox">30,00 €</p>
+          <p class="destinationdesboxs marocdest">Maroc</p>
         </article>
       </div>
       <h4>La prochaine destination ?</h4>
@@ -186,13 +194,15 @@
     </section>
   </main>
 
-  <section class="section" id="avis"> 
+  <hr>
+
+  <section class="sectioncarroussel" id="avis"> 
     <h3>Ce que disent nos clients</h3>
     <div>
-      <article class="ficheeavis">
-        <div>
+      <article class="ficheavis">
+        <div class="avisclient">
           <p>Louise</p>
-          <div>
+          <div class="notesetoiles">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -201,7 +211,7 @@
           </div>
         </div>
         <p>Je viens de recevoir et de tester mon panier pour 3 repas. C’est d’une simplicité ! Et super bon ! Je l’ai reçu à l’heure indiqué, les fiches repas sont belles et tout tout tout est bien pensé : les proportions, les sachets, le déballage, la cuisine rien de compliqué. J’ai adoré et je recommanderai. [...]</p>
-        <p><time>16/11/2020</time> via <a href="">Google</a></p>
+        <p class="dateetorigine"><time>16/11/2020</time> via <a href="">Google</a></p>
       </article>
     </div>
   </section>
