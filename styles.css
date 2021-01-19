@@ -98,7 +98,7 @@ h3{
   margin: 3vh 0;
 }
 h6{
-  font-size: 18px;
+  font-size: 14px;
 }
 p{
   font-size: 14px;
@@ -201,8 +201,7 @@ header{
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-top: 40px;
-  margin-right: 35px;
+  margin: 40px 15px 0px 15px;
 }
 
 
@@ -433,6 +432,7 @@ hr{
 .client-notice{
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .client-notice p{
   text-transform: uppercase;
@@ -470,8 +470,7 @@ hr{
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-top: 40px;
-  margin-right: 35px;
+  margin: 40px 15px 0px 15px;
 }
 
 .reassure .icon{
@@ -482,22 +481,36 @@ hr{
 footer{
   background-color:white;
   min-height: 52vh;
-  align-items: flex-start;
+  padding-right: 10vw;
+  padding-left: 10vw;
+  text-align: center;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  width: 100%;
+}
+.end-page{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 footer h6{
   padding: 3vh 0;
 }
 
-.titles-in-footer{
-  width: 100%;
-  margin: 10vh 0;
+.right-side, .left-side{
+  margin-bottom: 30px;
+  width: 350px;
 }
 
 .title-footer{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border-bottom: black 1px solid;
+  width: 350px;
 }
 
 .newsletter-subscription{

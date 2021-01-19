@@ -59,7 +59,12 @@
       <!-- <img class="fullimage" src="images/image-full-hero.png" alt="monde"> -->
       <div id="btnandarrow">
         <a href="#" class="btnsubscribe subscribegeneral">Je m'abonne / J'offre</a>
-        <i class="fas fa-chevron-circle-down"></i>
+        <svg>
+          <symbol id="icon-down-arrow" viewBox="0 0 32 32">
+            <path fill="#f90" style="fill: var(--color1, #f90)" d="M16 0c-8.836 0-16 7.164-16 16s7.163 16 16 16 16-7.164 16-16c0-8.836-7.164-16-16-16zM23.22 14.042l-5.978 5.978c-0.057 0.089-0.122 0.175-0.201 0.252-0.298 0.299-0.692 0.442-1.082 0.435-0.391 0.007-0.783-0.137-1.082-0.435-0.078-0.078-0.144-0.163-0.202-0.253l-6.004-6.005c-0.292-0.291-0.438-0.674-0.438-1.056-0.001-0.382 0.146-0.764 0.437-1.056 0.583-0.583 1.529-0.583 2.113 0l5.175 5.175 5.148-5.149c0.583-0.583 1.529-0.583 2.113 0s0.583 1.529 0 2.113z"></path>
+            </symbol>
+        </svg>
+        <svg class="icon icon-down-arrow"><use xlink:href="#icon-down-arrow"></use></svg>
       </div>
     </section>
 
@@ -119,7 +124,15 @@
               <p>Des anecdotes et coutumes sur la gastronomie du pays à l'honneur</p>
             </li>
           </ul>
-          <a href="#" class="other-boxs"><i class="fas fa-plus-circle"></i>Voir les anciennes boxs</a>
+          <a href="#" class="other-boxs">
+            <svg>
+              <symbol id="icon-plus" viewBox="0 0 32 32">
+                <path fill="#f90" style="fill: var(--color1, #f90)" d="M16 0c-8.823 0-16 7.177-16 16s7.177 16 16 16 16-7.177 16-16-7.177-16-16-16zM23 17.333h-5.667v5.667c0 0.736-0.597 1.333-1.333 1.333s-1.333-0.597-1.333-1.333v-5.667h-5.667c-0.736 0-1.333-0.597-1.333-1.333s0.597-1.333 1.333-1.333h5.667v-5.667c0-0.736 0.597-1.333 1.333-1.333s1.333 0.597 1.333 1.333v5.667h5.667c0.736 0 1.333 0.597 1.333 1.333s-0.597 1.333-1.333 1.333z"></path>
+                </symbol>
+            </svg>
+            <svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg>
+            Voir les anciennes boxs
+          </a>
           <ul class="price-list">
             <li>
               <p>1 mois</p> 
@@ -193,11 +206,21 @@
                 <h5 class="title-boxs">La box Voyageuse Spécial Maroc</h5>
                 <div class="number-notices">
                   <div class="note-star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
+                    <svg>
+                      <symbol id="icon-star" viewBox="0 0 32 32">
+                        <path fill="#f90" style="fill: var(--color1, #f90)" d="M31.916 11.649c-0.211-0.648-0.785-1.107-1.463-1.168l-9.237-0.839-3.651-8.547c-0.27-0.628-0.883-1.033-1.565-1.033s-1.296 0.405-1.564 1.033l-3.651 8.547-9.239 0.839c-0.677 0.063-1.251 0.521-1.463 1.168-0.211 0.648-0.016 1.359 0.496 1.808l6.983 6.123-2.059 9.068c-0.151 0.667 0.108 1.356 0.661 1.756 0.297 0.216 0.647 0.324 0.997 0.324 0.301 0 0.603-0.080 0.872-0.241l7.965-4.763 7.964 4.763c0.584 0.349 1.319 0.317 1.871-0.083 0.553-0.4 0.812-1.089 0.661-1.756l-2.059-9.068 6.983-6.123c0.512-0.449 0.707-1.158 0.496-1.808z"></path>
+                        </symbol>
+                    </svg>
+                    <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                    <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                    <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                    <svg>
+                      <symbol id="icon-star-empty" viewBox="0 0 32 32">
+                        <path fill="#f90" style="fill: var(--color1, #f90)" d="M7.162 30.728c-0.351 0-0.699-0.109-0.996-0.324-0.553-0.401-0.812-1.091-0.661-1.756l2.059-9.068-6.982-6.123c-0.513-0.448-0.709-1.158-0.499-1.807 0.211-0.648 0.784-1.107 1.463-1.169l9.238-0.839 3.652-8.547c0.269-0.628 0.883-1.033 1.564-1.033s1.295 0.406 1.564 1.032l3.652 8.548 9.236 0.839c0.68 0.061 1.253 0.521 1.464 1.169s0.016 1.359-0.497 1.807l-6.982 6.121 2.059 9.068c0.151 0.667-0.108 1.356-0.661 1.756-0.552 0.4-1.288 0.431-1.869 0.081l-7.966-4.76-7.966 4.763c-0.269 0.16-0.569 0.241-0.872 0.241zM16 23.673c0.303 0 0.603 0.081 0.872 0.241l7.518 4.496-1.943-8.559c-0.139-0.609 0.068-1.245 0.539-1.657l6.592-5.781-8.722-0.792c-0.628-0.057-1.168-0.452-1.413-1.031l-3.443-8.066-3.447 8.067c-0.243 0.575-0.783 0.97-1.409 1.027l-8.723 0.792 6.592 5.781c0.472 0.413 0.679 1.048 0.539 1.659l-1.941 8.559 7.518-4.495c0.269-0.16 0.569-0.241 0.872-0.241zM10.713 9.807s0 0.001-0.001 0.003zM21.284 9.803l0.001 0.003c0-0.001 0-0.001-0.001-0.003z"></path>
+                      </symbol>
+                    </svg>
+                    <svg class="icon icon-star-empty"><use xlink:href="#icon-star-empty"></use></svg>
+                    <svg class="icon icon-star-empty"><use xlink:href="#icon-star-empty"></use></svg>
                   </div>
                   <a href="#">26 avis</a>
                 </div>
@@ -211,11 +234,11 @@
                 <h5 class="title-boxs">La box Voyageuse Spécial Inde</h5>
                 <div class="number-notices">
                   <div class="note-star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
+                    <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                    <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                    <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                    <svg class="icon icon-star-empty"><use xlink:href="#icon-star-empty"></use></svg>
+                    <svg class="icon icon-star-empty"><use xlink:href="#icon-star-empty"></use></svg>
                   </div>
                   <a href="#">26 avis</a>
                 </div>
@@ -229,11 +252,11 @@
                 <h5 class="title-boxs">La box Voyageuse Spécial Chine</h5>
                 <div class="number-notices">
                   <div class="note-star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
+                    <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                    <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                    <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                    <svg class="icon icon-star-empty"><use xlink:href="#icon-star-empty"></use></svg>
+                    <svg class="icon icon-star-empty"><use xlink:href="#icon-star-empty"></use></svg>
                   </div>
                   <a href="">26 avis</a>
                 </div>
@@ -271,11 +294,11 @@
               <div class="client-notice">
                 <p>Louise</p>
                 <div class="note-star">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star-empty"><use xlink:href="#icon-star-empty"></use></svg>
+                  <svg class="icon icon-star-empty"><use xlink:href="#icon-star-empty"></use></svg>
                 </div>
               </div>
               <p>Je viens de recevoir et de tester mon panier pour 3 repas. C’est d’une simplicité ! Et super bon ! Je l’ai reçu à l’heure indiqué, les fiches repas sont belles et tout tout tout est bien pensé : les proportions, les sachets, le déballage, la cuisine rien de compliqué. J’ai adoré et je recommanderai. [...]</p>
@@ -287,11 +310,11 @@
               <div class="client-notice">
                 <p>Louise</p>
                 <div class="note-star">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star-empty"><use xlink:href="#icon-star-empty"></use></svg>
+                  <svg class="icon icon-star-empty"><use xlink:href="#icon-star-empty"></use></svg>
                 </div>
               </div>
               <p>Je viens de recevoir et de tester mon panier pour 3 repas. C’est d’une simplicité ! Et super bon ! Je l’ai reçu à l’heure indiqué, les fiches repas sont belles et tout tout tout est bien pensé : les proportions, les sachets, le déballage, la cuisine rien de compliqué. J’ai adoré et je recommanderai. [...]</p>
@@ -303,11 +326,11 @@
               <div class="client-notice">
                 <p>Guillaume</p>
                 <div class="note-star">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star-empty"><use xlink:href="#icon-star-empty"></use></svg>
+                  <svg class="icon icon-star-empty"><use xlink:href="#icon-star-empty"></use></svg>
                 </div>
               </div>
               <p>Cela fait maintenant plusieurs mois que je reçois toutes les semaines mon colis rutabago... et j'en suis très satisfait ! cuisine facile pour un débutant comme moi... et pleine de diversité ! je n'ai pas manger 2 fois le même plats durant toute cette période ! c'est bon, c'est bio, c'est pratique !</p>
@@ -319,11 +342,11 @@
               <div class="client-notice">
                 <p>Romain</p>
                 <div class="note-star">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star-empty"><use xlink:href="#icon-star-empty"></use></svg>
+                  <svg class="icon icon-star-empty"><use xlink:href="#icon-star-empty"></use></svg>
                 </div>
               </div>
               <p>Une belle petite boîte française pour manger sainement plus facilement ! Les recettes sont bonnes, faciles à préparer et les ingrédients de très bonne qualité ! En plus de ça, l'équipe est très réactive sympa, toujours aux petits soins pour ses clients !</p>
@@ -335,11 +358,11 @@
               <div class="client-notice">
                 <p>Neshan</p>
                 <div class="note-star">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star-empty"><use xlink:href="#icon-star-empty"></use></svg>
+                  <svg class="icon icon-star-empty"><use xlink:href="#icon-star-empty"></use></svg>
                 </div>
               </div>
               <p>Concept enthousiasmant et qui tient ses promesses. J'adore la découverte de nouvelles recettes, goûteuses et saines, je gagne du temps en évitant les courses et j'allège ma charge mentale en découvrant des menus tout prêts. Bref, je recommande !</p>
@@ -351,11 +374,11 @@
               <div class="client-notice">
                 <p>Marie</p>
                 <div class="note-star">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star-empty"><use xlink:href="#icon-star-empty"></use></svg>
+                  <svg class="icon icon-star-empty"><use xlink:href="#icon-star-empty"></use></svg>
                 </div>
               </div>
               <p>Très bon produit français bio. Facile à cuisiner même pour des débutants. Très varié et recettes originales. Ça nous simplifie la vie tout en mangeant équilibré. Fini la corvée des courses.</p>
@@ -425,27 +448,44 @@
     </figure>
   </section>
   
-  <footer class="section">
-    <p>Pas envie de louper une info sur la Box Voyageuse ? Je m’abonne à la newsletter et retrouve des recettes exclusives, des interviews inspirantes et d'autres actualités brûlantes !</p>
-    <h6>Newsletter</h6>
-    <div class="newsletter-subscription">
-      <input aria-labelledby="this" type="email" class="email" pattern=".+@globex.com" size="30" placeholder="E-mail" required>
-      <button id="this" class="send"><i class="fas fa-chevron-right"></i></button>
+  <footer>
+    <div class="end-page">
+      <div class="right-side">
+        <p>Pas envie de louper une info sur la Box Voyageuse ? Je m’abonne à la newsletter et retrouve des recettes exclusives, des interviews inspirantes et d'autres actualités brûlantes !</p>
+        <h6>Newsletter</h6>
+        <div class="newsletter-subscription">
+          <input aria-labelledby="this" type="email" class="email" pattern=".+@globex.com" size="30" placeholder="E-mail" required>
+          <button id="this" class="send">
+            <svg>
+              <symbol id="icon-right-arrow-1" viewBox="0 0 32 32">
+                <path fill="#fff" style="fill: var(--color2, rgb(255, 255, 255))" d="M24.889 14.751l-14.24-14.24c-0.329-0.33-0.769-0.511-1.238-0.511s-0.908 0.182-1.238 0.511l-1.049 1.048c-0.682 0.683-0.682 1.794 0 2.476l11.958 11.958-11.971 11.971c-0.329 0.33-0.511 0.769-0.511 1.238s0.182 0.908 0.511 1.238l1.049 1.048c0.33 0.33 0.769 0.511 1.238 0.511s0.908-0.182 1.238-0.511l14.254-14.253c0.33-0.331 0.511-0.772 0.51-1.242 0.001-0.471-0.18-0.912-0.51-1.243z"></path>
+                </symbol>
+            </svg>
+            <svg class="icon icon-right-arrow-1"><use xlink:href="#icon-right-arrow-1"></use></svg>
+          </button>
+        </div>
+      </div>
+      <div class="left-side">
+        <nav class="title-footer">
+          <h6>Notre Offre</h6>
+          <svg>
+              <symbol id="icon-arrow-down-sign-to-navigate" viewBox="0 0 32 32">
+                <path fill="#fff" style="fill: var(--color2, rgb(0, 0, 0))" d="M16 25.12c-0.573 0-1.147-0.219-1.584-0.656l-13.759-13.759c-0.875-0.875-0.875-2.294 0-3.169s2.294-0.875 3.169 0l12.174 12.175 12.174-12.175c0.875-0.875 2.294-0.875 3.169 0s0.876 2.294 0 3.169l-13.759 13.759c-0.437 0.437-1.011 0.656-1.584 0.656z"></path>
+              </symbol>
+          </svg>
+          <svg class="icon icon-arrow-down-sign-to-navigate"><use xlink:href="#icon-arrow-down-sign-to-navigate"></use></svg>
+        </nav>
+        <nav class="title-footer">
+          <h6>À propos</h6>
+          <svg class="icon icon-arrow-down-sign-to-navigate"><use xlink:href="#icon-arrow-down-sign-to-navigate"></use></svg>
+        </nav>
+        <nav class="title-footer">
+          <h6>Aide</h6>
+          <svg class="icon icon-arrow-down-sign-to-navigate"><use xlink:href="#icon-arrow-down-sign-to-navigate"></use></svg>
+        </nav>
+      </div>
     </div>
-    <div class="titles-in-footer">
-      <nav class="title-footer">
-        <h6>Notre Offre</h6>
-        <i class="fas fa-chevron-down"></i>
-      </nav>
-      <nav class="title-footer">
-        <h6>À propos</h6>
-        <i class="fas fa-chevron-down"></i>
-      </nav>
-      <nav class="title-footer">
-        <h6>Aide</h6>
-        <i class="fas fa-chevron-down"></i>
-      </nav>
-    </div>
+
     <div class="social-media">
       <svg>
         <symbol id="icon-facebook" viewBox="0 0 32 32">
@@ -465,7 +505,7 @@
       <svg>
         <symbol id="icon-twitter" viewBox="0 0 32 32">
           <path fill="#f90" style="fill: var(--color1, #f90)" d="M32 16c0 8.836-7.163 16-16 16s-16-7.163-16-16c0-8.836 7.163-16 16-16s16 7.163 16 16z"></path>
-          <path fill="#f1f2f2" style="fill: var(--color3, #f1f2f2)" d="M25.801 11.499c-0.686 0.304-1.423 0.51-2.197 0.601 0.79-0.473 1.396-1.222 1.682-2.115-0.739 0.438-1.558 0.756-2.429 0.928-0.698-0.743-1.692-1.207-2.792-1.207-2.112 0-3.824 1.713-3.824 3.824 0 0.3 0.034 0.592 0.1 0.872-3.178-0.159-5.997-1.682-7.883-3.996-0.329 0.565-0.518 1.222-0.518 1.923 0 1.327 0.676 2.498 1.701 3.183-0.627-0.020-1.217-0.192-1.732-0.479-0 0.016-0 0.033-0 0.049 0 1.853 1.319 3.399 3.068 3.75-0.321 0.088-0.659 0.134-1.007 0.134-0.247 0-0.486-0.024-0.72-0.068 0.487 1.519 1.899 2.625 3.573 2.656-1.309 1.026-2.958 1.637-4.75 1.637-0.308 0-0.613-0.018-0.912-0.054 1.692 1.086 3.702 1.718 5.862 1.718 7.034 0 10.881-5.827 10.881-10.882 0-0.166-0.004-0.331-0.011-0.495 0.748-0.539 1.396-1.212 1.909-1.979v0z"></path>
+          <path fill="#f1f2f2" style="fill: var(--color3, #ffffff)" d="M25.801 11.499c-0.686 0.304-1.423 0.51-2.197 0.601 0.79-0.473 1.396-1.222 1.682-2.115-0.739 0.438-1.558 0.756-2.429 0.928-0.698-0.743-1.692-1.207-2.792-1.207-2.112 0-3.824 1.713-3.824 3.824 0 0.3 0.034 0.592 0.1 0.872-3.178-0.159-5.997-1.682-7.883-3.996-0.329 0.565-0.518 1.222-0.518 1.923 0 1.327 0.676 2.498 1.701 3.183-0.627-0.020-1.217-0.192-1.732-0.479-0 0.016-0 0.033-0 0.049 0 1.853 1.319 3.399 3.068 3.75-0.321 0.088-0.659 0.134-1.007 0.134-0.247 0-0.486-0.024-0.72-0.068 0.487 1.519 1.899 2.625 3.573 2.656-1.309 1.026-2.958 1.637-4.75 1.637-0.308 0-0.613-0.018-0.912-0.054 1.692 1.086 3.702 1.718 5.862 1.718 7.034 0 10.881-5.827 10.881-10.882 0-0.166-0.004-0.331-0.011-0.495 0.748-0.539 1.396-1.212 1.909-1.979v0z"></path>
         </symbol>
       </svg>
       <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
