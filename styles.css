@@ -1,11 +1,38 @@
-/* ______________________________________________________________________________DEFINITIONS-DE-PARAMETRES-GENRAL___________________________________________________________________________*/
-/* Réinitialisation de certains paramètres */
+/* ______________________________________________________________________________POLICES___________________________________________________________________________*/
+@font-face {
+  font-family: "Barlow Regular";
+  src: url("/police/Barlow/woff2/Barlow-Regular.woff2") format("woff2"),
+      url("/police/Barlow/woff/Barlow-Regular.woff") format("woff"),
+      url("/police/Barlow/ttf/Barlow-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Barlow Bold";
+  src: url("/police/Barlow/woff2/Barlow-Bold.woff2") format("woff2"),
+      url("/police/Barlow/woff/Barlow-Bold.woff") format("woff"),
+      url("/police/Barlow/ttf/Barlow-Bold.ttf") format("truetype");
+}
+/* @font-face {
+  font-family: "Barlow Italic";
+  src: url("/police/Barlow/woff2/Barlow-Italic.woff2") format("woff2"),
+      url("/police/Barlow/woff/Barlow-Italic.woff") format("woff"),
+      url("/police/Barlow/ttf/Barlow-Italic.ttf") format("truetype");
+} */
+
+@font-face {
+  font-family: "Barlow Extrabold";
+  src: url("/police/Barlow/woff2/Barlow-ExtraBold.woff2") format("woff2"),
+      url("/police/Barlow/woff/Barlow-ExtraBold.woff") format("woff"),
+      url("/police/Barlow/ttf/Barlow-ExtraBold.ttf") format("truetype");
+}
+
+/* ______________________________________________________________________________DEFINITIONS GENERAL PARAMETERS___________________________________________________________________________*/
 * {
   box-sizing: border-box;
-  font-family: 'barlow';
+  font-family: "Barlow";
   line-height: 140%;
 }
 
+/* ICON SVG */
 .icon {
   display: inline-block;
   width: 1em;
@@ -19,46 +46,10 @@ svg{
   width:0; 
   height: 0;
 }
+/* ICON SVG */
 
 
-@font-face {
-  font-family: 'barlow';
-  font-style: normal;
-  src: url('police/Barlow/Barlow-Regular.ttf')
-}
-
-@font-face {
-  font-family: 'barlow medium';
-  font-style: medium;
-  src: url('police/Barlow/Barlow-Medium.ttf')
-}
-
-@font-face {
-  font-family: 'barlow bold';
-  font-style: bold;
-  src: url('police/Barlow/Barlow-Bold.ttf')
-}
-
-@font-face {
-  font-family: 'barlow extrabold';
-  font-style: extrabold;
-  src: url('police/Barlow/Barlow-ExtraBold.ttf')
-}
-
-@font-face {
-  font-family: 'barlow italic';
-  font-style: italic;
-  src: url('police/Barlow/Barlow-Italic.ttf')
-}
-
-@font-face {
-  font-family: 'barlow black';
-  font-style: black;
-  src: url('police/Barlow/Barlow-Black.ttf')
-}
-
-/* Réinitialisation de certains paramètres */
-
+/* SECTIONS */
 .section{
   display: flex;
   flex-direction: column;
@@ -80,10 +71,13 @@ svg{
   padding-top: 5vh;
   padding-bottom: 8vh;
 }
+/* SECTIONS */
 
+
+/* TITRES ET TEXTES */
 h3,h1,h4,h5,h6{
   text-transform: uppercase;
-  font-family: 'barlow bold';
+  font-family: "Barlow Bold";
   line-height: 140%;
 }
 h1{
@@ -102,53 +96,11 @@ h6{
 }
 p{
   font-size: 14px;
-  font-family: 'barlow';
+  font-family: "Barlow Regular";
   line-height: 140%;
   margin: 15px 0;
 }
-
-header{
-  background-color:white;
-  display: flex;
-  height: 10vh;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  position: sticky;
-  top:0;
-  z-index: 5;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.icon-Logo{
-  font-size: 250%;
-}
-
-#userandbasket{
-  display: flex;
-  list-style: none;
-}
-#userandbasket li{
-  margin-right: 2vw;
-}
-
-.herofullimage{
-  background-color:#FFF3DA;
-  background-image: url(images/image-full-hero.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center right;
-  height: 93vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-.fullimage{
-  width:100%;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-40%);
-}
+/* TITRES ET TEXTES */
 
 /* BONTON S'ABONNER */
 .subscribemenu{
@@ -170,11 +122,59 @@ header{
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: 'barlow extrabold';
+  font-family: "Barlow Extrabold";
 }
 /* BONTON S'ABONNER */
 
-#btnandarrow{
+/* ______________________________________________________________________________HEADER___________________________________________________________________________*/
+
+header{
+  background-color:white;
+  display: flex;
+  height: 10vh;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  position: sticky;
+  top:0;
+  z-index: 5;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.icon-Logo{
+  font-size: 250%;
+}
+
+.userandbasket{
+  display: flex;
+  list-style: none;
+}
+.userandbasket li{
+  margin-right: 2vw;
+}
+
+/* ______________________________________________________________________________HERO_FULL_IMAGE___________________________________________________________________________*/
+
+.herofullimage{
+  background-color:#FFF3DA;
+  background-image: url(images/image-full-hero.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center right;
+  height: 93vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.fullimage{
+  width:100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-40%);
+}
+
+
+.btnandarrow{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -186,6 +186,9 @@ header{
   margin-top: 7vh;
   color: #FF9900;
 }
+
+
+/* ______________________________________________________________________________SECTIONS WITH 4 PARTIES : concept, cuisnequalite, reasure___________________________________________________________________________*/
 
 .allarticles{
   width: 100%;
@@ -205,23 +208,26 @@ header{
 }
 
 
-.concept,.cusinequalite{
+.concept,.cook-quality{
   min-height: 55vh;
 }
 
-.concept figcaption, .cusinequalite figcaption{
+.concept figcaption, .cook-quality figcaption{
   color: #FF9900;
-  font-family: 'barlow bold';
+  font-family: "Barlow Bold";
 }
 .reassure figcaption{
   color:white;
-  font-family: 'barlow bold';
+  font-family: "Barlow Bold";
 }
 
 .circle-img{
   width: 50%;
   border-radius: 50%;
 }
+
+
+/* ______________________________________________________________________________TYPICAL CONTENT___________________________________________________________________________*/
 
 .typical-content{
   background-color:#FFF3DA;
@@ -290,6 +296,9 @@ header{
   margin: 0.5vh;
 }
 
+
+/* ______________________________________________________________________________3 LAST BOXS___________________________________________________________________________*/
+
 .last-box{
   background-color:#FFF3DA;
   min-height: 101vh;
@@ -350,7 +359,7 @@ header{
   color: #FF9900;
 }
 
-/* Carroussel */
+/* Carroussel FOR 3 LAST BOX and NOTICES______________*/
 
 .carousel{
   width: 115%;
@@ -383,7 +392,9 @@ header{
   background-color: #FF9900;
   border-radius: 3px;
 }
+/* Carroussel FOR 3 LAST BOX and NOTICES______________*/
 
+/* ______________________________________________________________________________EXPERTS AND PASSIONNATE___________________________________________________________________________*/
 
 .experts-passionates{
   background-color:white;
@@ -415,17 +426,19 @@ header{
   margin-bottom: 3vh;
 }
 
+/* ______________________________________________________________________________NOTICES___________________________________________________________________________*/
+
 hr{
   color: black;
   width: 50%;
 }
 
-#avis{
+.notices{
   background-color:white;
   min-height: 51vh;
 }
 
-#avis p{
+.notices p{
   text-align: left;
 }
 
@@ -452,6 +465,8 @@ hr{
   margin-top: 3vh;
 }
 
+/* ______________________________________________________________________________REASURE___________________________________________________________________________*/
+
 .reassure{
   background-color:#FF9900;
   min-height: 20vh;
@@ -477,6 +492,9 @@ hr{
   font-size: 240%;
   margin-bottom: 20px;
 }
+
+/* ______________________________________________________________________________FOOTER___________________________________________________________________________*/
+
 
 footer{
   background-color:white;
