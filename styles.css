@@ -520,7 +520,7 @@ footer h6{
 
 .right-side, .left-side{
   margin-bottom: 30px;
-  width: 350px;
+  width: 300px;
 }
 
 .title-footer{
@@ -528,7 +528,7 @@ footer h6{
   justify-content: space-between;
   align-items: center;
   border-bottom: black 1px solid;
-  width: 350px;
+  width: 300px;
 }
 
 .newsletter-subscription{
