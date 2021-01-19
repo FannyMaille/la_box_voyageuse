@@ -92,7 +92,7 @@ p{
   font-size: 14px;
 }
 
-#menu{
+header{
   background-color:white;
   display: flex;
   height: 10vh;
@@ -104,15 +104,15 @@ p{
   justify-content: space-around;
 }
 
-#connexionetpannier{
+#userandbasket{
   margin: 0;
   padding-left: 0px;
 }
-#connexionetpannier li{
+#userandbasket li{
   margin-right: 2vw;
 }
 
-#herofullimage{
+.herofullimage{
   background-color:#FFF3DA;
   height: 93vh;
   display: flex;
@@ -128,16 +128,16 @@ p{
 }
 
 /* BONTON S'ABONNER */
-.sabonnermenu{
+.subscribemenu{
   height: 30px;
   width: 155px;
   font-size: 13px;
 }
-.sabonnergeneral{
+.subscribegeneral{
   height: 53px;
   width: 204px;
 }
-.btnsabonner{
+.btnsubscribe{
   align-items: center;
   justify-content: center;
   display: flex;
@@ -150,7 +150,7 @@ p{
 }
 /* BONTON S'ABONNER */
 
-#btnetfleche{
+#btnandarrow{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -167,32 +167,32 @@ p{
   width: 100%;
 }
 
-#concept,#cusinequalite,#rassurer{
+.concept,#cusinequalite,#rassurer{
   min-height: 83vh;
 }
-.ligne1, .ligne2{
+.one-line, .two-line{
   display: flex;
   margin-bottom: 5vh;
 }
-.ligne1{
+.one-line{
   margin-top: 5vh;
 }
-#concept article, #cusinequalite article, #rassurer article{
+.concept article, #cusinequalite article, #rassurer article{
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 40%;
 }
-.articlegauche figure, .articledroit figure{
+.article-left figure, .article-right figure{
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0;
 }
-.articlegauche{
+.article-left{
   margin-right: 20%;
 }
-#concept figcaption, #cusinequalite figcaption{
+.concept figcaption, #cusinequalite figcaption{
   color: #FF9900;
   font-family: 'barlow bold';
 }
@@ -201,26 +201,26 @@ p{
   font-family: 'barlow bold';
 }
 
-.rondsimg{
+.cercle-img{
   height: 80px;
   width: 80px;
   border-radius: 50%;
   margin-bottom: 2vh;
 }
 
-#contenutype{
+.typical-content{
   background-color:#FFF3DA;
   min-height: 119vh;
 }
-.imageinterrieur{
+.inside-box{
   width:110%;
 }
 
-#listecontenu{
+.ingredient-box-list{
   list-style-image: url('images/tick.svg');
   padding-left: 0px;
 }
-#listecontenu li{
+.ingredient-box-list li{
   text-align: left;
 }
 
@@ -229,12 +229,12 @@ p{
   margin-right: 3vw;
 }
 
-.autresboxs{
+.other-boxs{
   text-decoration:none;
   color: black;
 }
 
-#listedesprix{
+.price-list{
   width: 120%;
   padding-left: 0px;
   display: flex;
@@ -254,19 +254,19 @@ p{
   margin: 0.5vh;
 }
 
-#dernnierebox{
+.last-box{
   background-color:#FFF3DA;
   min-height: 101vh;
 }
 
-.troisbox{
+.three-boxs{
   filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.25));
   background-color: white;
   border-radius: 4px;
   width: 85%;
 }
 
-.imgdestroisboxs{
+.img-three-boxs{
   width: 100%;
   border-radius: 4px;
   margin-top: 5vw;
@@ -274,7 +274,7 @@ p{
   padding-left: 5vw;
 }
 
-.titresboxs, .prixdesbox, .destinationdesboxs{
+.title-boxs, .box-prices, .box-destination{
   padding-top: 2vh;
   padding-bottom: 2vh;
   margin: 0;
@@ -283,13 +283,13 @@ p{
   width: 100%;
 }
 
-.titresboxs, .destinationdesboxs{
+.title-boxs, .box-destination{
   text-transform: uppercase;
 }
-.prixdesbox,.destinationdesboxs{
+.box-prices,.box-destination{
   border-top: black solid 1px;
 }
-.destinationdesboxs{
+.box-destination{
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
 }
@@ -303,7 +303,7 @@ p{
   background-color: #FAC2C2;
 }
 
-.nombreavis{
+.number-notices{
   display: flex;
   justify-content: space-evenly;
   font-size: 12px;
@@ -311,7 +311,7 @@ p{
   padding-left: 10vw;
   margin-bottom: 2vh;
 }
-.notesetoiles{
+.note-star{
   color: #FF9900;
 }
 
@@ -349,12 +349,11 @@ p{
 }
 
 
-
-#expertspassionnes{
+.experts-passionates{
   background-color:white;
   min-height: 66vh;
 }
-.imgeequipe{
+.img-team{
   width: 80%;
   border-radius: 50%;
   margin-top: 2vh;
@@ -375,22 +374,22 @@ hr{
   text-align: left;
 }
 
-.avisclient{
+.client-notice{
   display: flex;
   justify-content: space-between;
 }
-.avisclient p{
+.client-notice p{
   margin: 0;
   text-transform: uppercase;
 }
 
-.dateetorigine{
+.date-notice{
   padding-top: 2vh;
   margin: 0;
   border-top: black 1px solid;
 }
 
-.ficheavis{
+.notice-form{
   filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.25));
   background-color: white;
   border-radius: 4px;
@@ -399,31 +398,31 @@ hr{
   margin-top: 3vh;
 }
 
-#rassurer{
+.reassure{
   background-color:#FF9900;
   min-height: 30vh;
   color: white;
   padding-top: 0;
   padding-bottom: 0;
 }
-#rassurer .far, #rassurer .fas{
+.reassure .far, .reassure .fas{
   font-size: 220%;
   margin-bottom: 3vh;
 }
 
-#basdepage{
+footer{
   background-color:white;
   min-height: 52vh;
   align-items: flex-start;
 }
 
-#titresdansfooter{
+.titles-in-footer{
   width: 100%;
   margin-top: 10vh;
   margin-bottom: 10vh;
 }
 
-.titrefooter{
+.title-footer{
   display: flex;
   justify-content: space-between;
   border-bottom: black 1px solid;
@@ -431,24 +430,24 @@ hr{
   padding-top: 3vh;
 }
 
-.titrefooter h6{
+.title-footer h6{
   margin: 0;
 }
 
-#abonnernewsletter{
+.newsletter-subscription{
   display: flex;
   height: 7vh;
   width: 100%;
 }
 
-#email{
+.email{
   background-color: #D6C5AD;
   border: none;
   width: 85%;
   padding-left: 15px;
 }
 
-#envoyer{
+.send{
   background-color: #FF9900;
   color: white;
   border: none;
