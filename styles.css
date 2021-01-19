@@ -15,6 +15,11 @@
   fill: currentColor;
 }
 
+svg{
+  width:0; 
+  height: 0;
+}
+
 
 @font-face {
   font-family: 'barlow';
@@ -53,10 +58,6 @@
 }
 
 /* Réinitialisation de certains paramètres */
-body{
-  margin: 0;
-  min-width: 170px;
-}
 
 .section{
   display: flex;
@@ -83,23 +84,27 @@ body{
 h3,h1,h4,h5,h6{
   text-transform: uppercase;
   font-family: 'barlow bold';
+  line-height: 140%;
 }
 h1{
   margin-top: 8vh;
   font-size: 30px;
 }
 h2{
-  margin-top: 0;
   font-size: 18px;
 }
 h3{
   font-size: 24px;
+  margin: 3vh 0;
 }
 h6{
   font-size: 18px;
 }
 p{
   font-size: 14px;
+  font-family: 'barlow';
+  line-height: 140%;
+  margin: 15px 0;
 }
 
 header{
@@ -119,8 +124,6 @@ header{
 }
 
 #userandbasket{
-  margin: 0;
-  padding-left: 0px;
   display: flex;
   list-style: none;
 }
@@ -156,6 +159,7 @@ header{
 .subscribegeneral{
   height: 53px;
   width: 204px;
+  margin: 20px 0;
 }
 .btnsubscribe{
   align-items: center;
@@ -184,12 +188,11 @@ header{
 }
 
 .allarticles{
-  padding-top: 0;
-  padding-bottom: 0;
   width: 100%;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin-top: 5vh;
 }
 
 .allarticles article{
@@ -198,12 +201,10 @@ header{
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 0px;
+  margin-top: 40px;
+  margin-right: 35px;
 }
 
-figcaption h4{
-  margin-bottom: 0px;
-}
 
 .concept,.cusinequalite{
   min-height: 55vh;
@@ -219,8 +220,7 @@ figcaption h4{
 }
 
 .circle-img{
-  height: 60%;
-  width: 60%;
+  width: 50%;
   border-radius: 50%;
 }
 
@@ -256,7 +256,6 @@ figcaption h4{
 
 .ingredient-box-list{
   list-style-image: url('icones/tick.svg');
-  padding-left: 0px;
 }
 .ingredient-box-list li{
   text-align: left;
@@ -274,7 +273,6 @@ figcaption h4{
 
 .price-list{
   width: 100%;
-  padding-left: 0px;
   display: flex;
   justify-content: center;
   list-style: none;
@@ -316,7 +314,6 @@ figcaption h4{
 .title-boxs, .box-prices, .box-destination{
   padding-top: 2vh;
   padding-bottom: 2vh;
-  margin: 0;
   padding-right: 5vw;
   padding-left: 5vw;
   width: 100%;
@@ -358,6 +355,7 @@ figcaption h4{
 
 .carousel{
   width: 115%;
+  margin: 20px 0px 120px 0px;
 }
 
 .carousel-items {
@@ -437,13 +435,11 @@ hr{
   justify-content: space-between;
 }
 .client-notice p{
-  margin: 0;
   text-transform: uppercase;
 }
 
 .date-notice{
   padding-top: 2vh;
-  margin: 0;
   border-top: black 1px solid;
 }
 
@@ -458,10 +454,8 @@ hr{
 
 .reassure{
   background-color:#FF9900;
-  min-height: 30vh;
+  min-height: 20vh;
   color: white;
-  padding-top: 0;
-  padding-bottom: 0;
   width: 100%;
   display: flex;
   align-items: center;
@@ -476,11 +470,13 @@ hr{
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 0;
+  margin-top: 40px;
+  margin-right: 35px;
 }
 
 .reassure .icon{
   font-size: 240%;
+  margin-bottom: 20px;
 }
 
 footer{
@@ -489,22 +485,19 @@ footer{
   align-items: flex-start;
 }
 
+footer h6{
+  padding: 3vh 0;
+}
+
 .titles-in-footer{
   width: 100%;
-  margin-top: 10vh;
-  margin-bottom: 10vh;
+  margin: 10vh 0;
 }
 
 .title-footer{
   display: flex;
   justify-content: space-between;
   border-bottom: black 1px solid;
-  padding-bottom: 3vh;
-  padding-top: 3vh;
-}
-
-.title-footer h6{
-  margin: 0;
 }
 
 .newsletter-subscription{
@@ -527,4 +520,12 @@ footer{
   width: 15%;
   border-bottom-right-radius: 4px;
   border-top-right-radius: 4px;
+}
+
+.social-media{
+  margin: 5vh 0;
+  font-size: 300%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
