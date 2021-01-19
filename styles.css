@@ -11,12 +11,12 @@
       url("/police/Barlow/woff/Barlow-Bold.woff") format("woff"),
       url("/police/Barlow/ttf/Barlow-Bold.ttf") format("truetype");
 }
-/* @font-face {
-  font-family: "Barlow Italic";
-  src: url("/police/Barlow/woff2/Barlow-Italic.woff2") format("woff2"),
-      url("/police/Barlow/woff/Barlow-Italic.woff") format("woff"),
-      url("/police/Barlow/ttf/Barlow-Italic.ttf") format("truetype");
-} */
+@font-face {
+  font-family: "Barlow Medium";
+  src: url("/police/Barlow/woff2/Barlow-Medium.woff2") format("woff2"),
+      url("/police/Barlow/woff/Barlow-Medium.woff") format("woff"),
+      url("/police/Barlow/ttf/Barlow-Medium.ttf") format("truetype");
+}
 
 @font-face {
   font-family: "Barlow Extrabold";
@@ -86,6 +86,7 @@ h1{
 }
 h2{
   font-size: 18px;
+  font-family: "Barlow Medium";
 }
 h3{
   font-size: 24px;
@@ -94,12 +95,20 @@ h3{
 h6{
   font-size: 14px;
 }
+a{
+  font-family: "Barlow Medium";
+  color: #FF9900;
+}
 p{
   font-size: 14px;
   font-family: "Barlow Regular";
   line-height: 140%;
   margin: 15px 0;
 }
+strong{
+  font-family: "Barlow Bold";
+}
+
 /* TITRES ET TEXTES */
 
 /* BONTON S'ABONNER */
@@ -165,6 +174,7 @@ header{
   flex-direction: column;
   align-items: center;
   text-align: center;
+  width: 100%;
 }
 .fullimage{
   width:100%;
@@ -172,7 +182,6 @@ header{
   top: 50%;
   transform: translateY(-40%);
 }
-
 
 .btnandarrow{
   display: flex;
@@ -210,6 +219,7 @@ header{
 
 .concept,.cook-quality{
   min-height: 55vh;
+  width: 100%;
 }
 
 .concept figcaption, .cook-quality figcaption{
@@ -238,6 +248,7 @@ header{
   text-align: center;
   padding-top: 5vh;
   padding-bottom: 5vh;
+  width: 100%;
 }
 .inside-box{
   width:310px;
@@ -273,6 +284,7 @@ header{
 
 .other-boxs{
   text-decoration:none;
+  margin: 5vh 0;
   color: black;
 }
 
@@ -294,6 +306,7 @@ header{
 }
 .price-list li p{
   margin: 0.5vh;
+  font-family: "Barlow Medium";
 }
 
 
@@ -302,6 +315,7 @@ header{
 .last-box{
   background-color:#FFF3DA;
   min-height: 101vh;
+  width: 100%;
 }
 
 .three-boxs{
@@ -336,6 +350,7 @@ header{
 .box-destination{
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
+  font-family: "Barlow Bold";
 }
 .marocdest{
   background-color: #E4FADA;
@@ -404,6 +419,7 @@ header{
   text-align: center;
   padding-top: 5vh;
   padding-bottom: 5vh;
+  width: 100%;
 }
 
 .team-explenations{
@@ -436,6 +452,7 @@ hr{
 .notices{
   background-color:white;
   min-height: 51vh;
+  width: 100%;
 }
 
 .notices p{
@@ -559,4 +576,90 @@ footer h6{
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+
+
+
+
+
+
+
+/* _____________NAVIGATION/MENU-BURGUER-POUR-PETIT-ECRAN__________*/
+/* Au depart le menu burguer n'est pas ouvert donc la croix ne doit pas aparaitre */
+.croix{
+  display:none;
+}
+/* Défintion de la div contenant la navigation burguer*/
+.navmenutel{
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 10px;
+}
+/* Défintion de la div contenant la navigation qui apparait lorsque l'on clique sur le burguer */
+#wrap{
+  display: flex;
+  justify-content: center;
+  height: 98vh;
+  width: 100%;
+  background-color:#FF9900;
+  padding-top: 20px;
+}
+/* Défintion de la mise en page des liens */
+#wrap  a{
+  outline: none;
+  text-decoration: none;
+  color: white;
+}
+/* Défintion de la mise en page des liens au moment où l'on passe la souris dessus */
+#wrap a:hover, a:focus{
+  text-decoration: underline;
+  color: #FF9900;
+  text-underline-position: under;
+}
+/* Défintion de la mise en page de la navigation des liens*/
+.navtel ul{
+  list-style: none;
+  padding-inline-start: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.navtel li{
+  margin-top:20px;
+}
+/* Défintion de la position d'originie de la div contenant la navigation */ 
+#wrap{
+  transform: translateY(-110vh);
+  position: absolute;
+  left: 0px;
+}
+/* Ne pas faire apparaitre la mise en page de base du bouton checkbox */ 
+#menutel{
+  display:none;
+}
+/* Lorsque mon bouton checkbox est cliqué donc checked il faut faire descendre la div contenant la navigation*/
+#menutel:checked ~ #wrap{
+  transform: translateY(1vh);
+}
+/* Par défault je veux que le symbole buguer soit visible mais pas celui de la croix */ 
+.burguer label>span{
+  display:none;
+}
+/* Lorsque mon bouton checkbox est cliqué donc checked il faut faire apparaitre la croix*/
+#menutel:checked ~ .burguer label>span{
+  display:block;
+  font-size:27px;
+  line-height:48px;
+  color: black;
+}
+/* Lorsque mon bouton checkbox est cliqué donc checked il faut faire disparaitre le symbole de burguer*/
+#menutel:checked ~ .burguer label>svg{
+  display:none;
+}
+
+/* Définition des propriétes du  main qui contient tout le contenu de ma page : mes 2 sections*/
+main{
+  display: flex;
+  flex-wrap: wrap;
 }
