@@ -201,11 +201,10 @@ header{
   font-family: 'barlow bold';
 }
 
-.cercle-img{
+.circle-img{
   height: 80px;
   width: 80px;
   border-radius: 50%;
-  margin-bottom: 2vh;
 }
 
 .typical-content{
