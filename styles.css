@@ -137,6 +137,13 @@ strong{
   text-transform: uppercase;
   font-weight: 800;
 }
+
+.btnsubscribe:hover{
+  background-color: white;
+  border: #FF9900 2px solid;
+  color: #FF9900;
+}
+
 /* BONTON S'ABONNER */
 
 /* ______________________________________________________________________________HEADER___________________________________________________________________________*/
@@ -163,6 +170,9 @@ header{
 .userandbasket{
   display: flex;
   list-style: none;
+}
+.icon-menu svg{
+  color:black;
 }
 .userandbasket li{
   margin-right: 2vw;
@@ -265,6 +275,7 @@ header{
 .circle-img{
   width: 50%;
   border-radius: 50%;
+  margin-bottom: 3vh;
 }
 
 
@@ -317,6 +328,9 @@ header{
   margin: 2vh 0;
   color: black;
 }
+.other-boxs:hover{
+  text-decoration:underline;
+}
 
 .price-list{
   width: 100%;
@@ -324,15 +338,25 @@ header{
   justify-content: center;
   list-style: none;
   margin: 2vh 0;
+  border: #FF9900 2px solid;
+  border-radius: 4px;
 }
 
 .price-list li{
-  border: #FF9900 1px solid;
+  border-right: #FF9900 1px solid;
   background-color: white;
   color: #FF9900;
   padding:5px 0;
   width: 100%;
 }
+.price-list li:last-child{
+  border-right:none;
+  border-radius: 4px;
+}
+.price-list li:first-child{
+  border-radius: 4px;
+}
+
 .price-list li p{
   margin: 0.5vh;
   font-size: 14px;
@@ -446,6 +470,7 @@ header{
   text-align: center;
   padding: 5vh 7vw;
   width: 100%;
+  
 }
 
 .team-explenations{
@@ -456,13 +481,12 @@ header{
   width: 100%;
 }
 .team-text{
-  width: 75%;
-  text-align: left;
-  margin-left: 2vw;
+  width: 100%;
+  text-align: center;
 }
 
 .img-team{
-  width: 200px;
+  width: 50%;
   border-radius: 50%;
   margin-top: 2vh;
   margin-bottom: 3vh;
@@ -623,6 +647,7 @@ footer h6{
   color: black;
   text-decoration: none;
   text-transform: uppercase;
+  font-size: 14px;
 }
 
 .navmenupc ol a:hover{
@@ -728,6 +753,9 @@ footer h6{
   .navmenutel{
     display: none;
   }
+  .icon-menu svg{
+    color:#FF9900;
+  }
   h1{
     font-size: 400%;
   }
@@ -797,6 +825,14 @@ footer h6{
   .herofullimage .btnsubscribe{
     grid-area: 4 / 1 / 6 / 2;
     justify-self: flex-start;
+  }
+  .team-text{
+    width: 60%;
+    text-align: left;
+    margin-left: 2vh;
+  } 
+  .img-team{
+    width: 25%;
   }
 }
 @media (min-width:850px)and (max-width:1410px){
