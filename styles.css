@@ -1,25 +1,27 @@
 /* ______________________________________________________________________________POLICES___________________________________________________________________________*/
 @font-face {
-  font-family: "Barlow Regular";
+  font-family: "Barlow";
   src: url("/police/Barlow/woff2/Barlow-Regular.woff2") format("woff2"),
       url("/police/Barlow/woff/Barlow-Regular.woff") format("woff"),
       url("/police/Barlow/ttf/Barlow-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Barlow Bold";
+  font-family: "Barlow";
+  font-weight: 500;
+  src: url("/police/Barlow/woff2/Barlow-Medium.woff2") format("woff2"),
+      url("/police/Barlow/woff/Barlow-Medium.woff") format("woff"),
+      url("/police/Barlow/ttf/Barlow-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Barlow";
+  font-weight: 700;
   src: url("/police/Barlow/woff2/Barlow-Bold.woff2") format("woff2"),
       url("/police/Barlow/woff/Barlow-Bold.woff") format("woff"),
       url("/police/Barlow/ttf/Barlow-Bold.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Barlow Medium";
-  src: url("/police/Barlow/woff2/Barlow-Medium.woff2") format("woff2"),
-      url("/police/Barlow/woff/Barlow-Medium.woff") format("woff"),
-      url("/police/Barlow/ttf/Barlow-Medium.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Barlow Extrabold";
+  font-family: "Barlow";
+  font-weight: 800;
   src: url("/police/Barlow/woff2/Barlow-ExtraBold.woff2") format("woff2"),
       url("/police/Barlow/woff/Barlow-ExtraBold.woff") format("woff"),
       url("/police/Barlow/ttf/Barlow-ExtraBold.ttf") format("truetype");
@@ -28,6 +30,9 @@
 /* ______________________________________________________________________________DEFINITIONS GENERAL PARAMETERS___________________________________________________________________________*/
 * {
   box-sizing: border-box;
+}
+
+body{
   font-family: "Barlow";
   line-height: 140%;
 }
@@ -77,7 +82,7 @@ svg{
 /* TITRES ET TEXTES */
 h3,h1,h4,h5,h6{
   text-transform: uppercase;
-  font-family: "Barlow Bold";
+  font-weight: 700;
   line-height: 140%;
 }
 h1{
@@ -86,7 +91,7 @@ h1{
 }
 h2{
   font-size: 18px;
-  font-family: "Barlow Medium";
+  font-weight: 500;
   line-height: 140%;
 }
 h3{
@@ -97,17 +102,16 @@ h6{
   font-size: 14px;
 }
 a{
-  font-family: "Barlow Medium";
+  font-weight: 500;
   color: #FF9900;
 }
 p{
   font-size: 14px;
-  font-family: "Barlow Regular";
   line-height: 140%;
   margin: 15px 0;
 }
 strong{
-  font-family: "Barlow Bold";
+  font-weight: 700;
 }
 
 /* TITRES ET TEXTES */
@@ -132,7 +136,7 @@ strong{
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: "Barlow Extrabold";
+  font-weight: 800;
 }
 /* BONTON S'ABONNER */
 
@@ -175,7 +179,9 @@ header{
   grid-template-columns: repeat(5, 1fr); 
   grid-template-rows: repeat(5, 1fr); 
   grid-column-gap: 0px;
-  grid-row-gap: 0px; 
+  grid-row-gap: 0px;
+  max-width: 1400px; 
+  margin: 0 auto;
 }
 
 .fisrttitle{
@@ -242,11 +248,11 @@ header{
 
 .concept figcaption, .cook-quality figcaption{
   color: #FF9900;
-  font-family: "Barlow Bold";
+  font-weight: 700;
 }
 .reassure figcaption{
   color:white;
-  font-family: "Barlow Bold";
+  font-weight: 700;
 }
 
 .circle-img{
@@ -325,7 +331,6 @@ header{
 }
 .price-list li p{
   margin: 0.5vh;
-  font-family: "Barlow Medium";
 }
 
 
@@ -369,7 +374,7 @@ header{
 .box-destination{
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  font-family: "Barlow Bold";
+  font-weight: 700;
 }
 .marocdest{
   background-color: #E4FADA;
@@ -622,7 +627,6 @@ footer h6{
 .navmenupc ol a{
   color: black;
   text-decoration: none;
-  font-family: "Barlow Regular";
   text-transform: uppercase;
 }
 
@@ -771,7 +775,6 @@ main{
   }
   .title-footer ol{
     display: contents;
-    font-family: "Barlow Regular";
   }
   .title-footer li{
     line-height: 240%;
@@ -787,6 +790,9 @@ main{
   }
   .text-inside-box{
     width:50%;
+  }
+  .carousel-items {
+    overflow-x: hidden;
   }
 }
 @media (min-width:850px){
