@@ -269,11 +269,11 @@ header{
   width: 100%;
 }
 .inside-box{
-  width:310px;
+  width:100%;
 }
 
 .text-inside-box{
-  width:500px;
+  width:100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -290,6 +290,7 @@ header{
 
 .ingredient-box-list{
   list-style-image: url('icones/tick.svg');
+  width: 90%;
 }
 .ingredient-box-list li{
   text-align: left;
@@ -781,6 +782,12 @@ main{
     width: 30%;
     margin-left: 70%;
   }
+  .inside-box{
+    width:50%;
+  }
+  .text-inside-box{
+    width:50%;
+  }
 }
 @media (min-width:850px){
   .fisrttitle{
@@ -800,5 +807,8 @@ main{
 @media (min-width:500px)and (max-width:700px){
   .fullimage{
     align-self: flex-start;
+  }
+  .inside-box{
+    width:80%;
   }
 }
