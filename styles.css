@@ -745,7 +745,7 @@ main{
     font-size: 200%;
   }
 }
-@media (min-width:700px){
+@media (min-width:850px){
   .fisrttitle{
     grid-area: 1 / 1 / 4 / 2;
     margin-left: 8vh;
@@ -760,7 +760,7 @@ main{
     margin-left: 8vh;
   }
 }
-@media (min-width:450px)and (max-width:700px){
+@media (min-width:500px)and (max-width:700px){
   .fullimage{
     align-self: flex-start;
   }
