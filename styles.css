@@ -87,6 +87,7 @@ h1{
 h2{
   font-size: 18px;
   font-family: "Barlow Medium";
+  line-height: 140%;
 }
 h3{
   font-size: 24px;
@@ -168,35 +169,49 @@ header{
 
 .herofullimage{
   background-color:#FFF3DA;
-  background-image: url(images/image-full-hero.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center right;
   height: 93vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
   width: 100%;
-}
-.fullimage{
-  width:100%;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-40%);
+  display: grid; 
+  grid-template-columns: repeat(5, 1fr); 
+  grid-template-rows: repeat(5, 1fr); 
+  grid-column-gap: 0px;
+  grid-row-gap: 0px; 
 }
 
-.btnandarrow{
+.fisrttitle{
+  grid-area: 1 / 1 / 2 / 6;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 3;
+}
+.fullimage{
+  grid-area: 2 / 1 / 5 / 6;
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+}
+.herofullimage .btnsubscribe{
+  grid-area: 5 / 1 / 6 / 6;
+  justify-self: center;
+  margin-bottom: 15vh;
+}
+
+.icon-down-arrow{
   bottom: 2vh;
+  left: 50%;
   position: absolute;
+  font-size: 200%;
+  transform: translateX(-50%);
+  z-index: 3;
 }
 
 .fa-chevron-circle-down{
   margin-top: 7vh;
   color: #FF9900;
+  z-index: 3;
 }
 
 
@@ -494,7 +509,7 @@ hr{
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
   padding: 5vh 10vw;
 }
@@ -586,7 +601,6 @@ footer h6{
 /* Défintion de comment doit être le menu pour les grands écrans*/
 .navpc ol{
   list-style: none;
-  padding-inline-start: 0;
   position: relative;
   display: flex;
   margin-top: 0px;
@@ -671,9 +685,8 @@ footer h6{
   text-underline-position: under;
 }
 /* Défintion de la mise en page de la navigation des liens*/
-.navtel ul{
+.navtel ol{
   list-style: none;
-  padding-inline-start: 0;
   position: relative;
   display: flex;
   align-items: center;
@@ -724,5 +737,31 @@ main{
   }
   .navmenutel{
     display: none;
+  }
+  h1{
+    font-size: 400%;
+  }
+  h2{
+    font-size: 200%;
+  }
+}
+@media (min-width:700px){
+  .fisrttitle{
+    grid-area: 1 / 1 / 4 / 2;
+    margin-left: 8vh;
+    text-align: left;
+  }
+  .fullimage{
+    grid-area: 1 / 2 / 6 / 6;
+    align-self: center;
+  }
+  .herofullimage .btnsubscribe{
+    grid-area: 4 / 1 / 6 / 2;
+    margin-left: 8vh;
+  }
+}
+@media (min-width:450px)and (max-width:700px){
+  .fullimage{
+    align-self: flex-start;
   }
 }
