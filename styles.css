@@ -113,7 +113,7 @@ strong{
 
 /* BONTON S'ABONNER */
 .subscribemenu{
-  height: 30px;
+  height: 35px;
   width: 155px;
   font-size: 13px;
 }
@@ -150,7 +150,10 @@ header{
 }
 
 .icon-Logo{
-  font-size: 250%;
+  font-size: 400%;
+}
+.userandbasket svg{
+  font-size: 150%;
 }
 
 .userandbasket{
@@ -502,7 +505,7 @@ hr{
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 40px 15px 0px 15px;
+  margin: 20px 15px 20px 15px;
 }
 
 .reassure .icon{
@@ -579,7 +582,48 @@ footer h6{
 }
 
 
+/* _____________NAVIGATION/MENU-POUR-GRAND-ECRAN__________*/
+/* Défintion de comment doit être le menu pour les grands écrans*/
+.navpc ol{
+  list-style: none;
+  padding-inline-start: 0;
+  position: relative;
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.navpc li{
+  margin: 15px;
+  margin-left: 0;
+  padding-right: 15px;
+  border-right: rgb(182, 180, 180) 1px solid;
+}
 
+.navmenupc ol a{
+  color: black;
+  text-decoration: none;
+  font-family: "Barlow Regular";
+  text-transform: uppercase;
+}
+
+.navmenupc ol a:hover{
+  color:#FF9900;
+  text-decoration: underline;
+}
+
+/* Défintion de la taille et de la position du logo dans le header*/
+.navlogo .logo{
+  width: 130px;
+  position: absolute;
+  top:50%;
+  left: 25%;
+  transform: translate(-50% , -50%);
+  left: 25%;
+  margin-bottom: 5px;
+}
+.navmenupc{
+  display: none;
+}
 
 
 
@@ -594,7 +638,17 @@ footer h6{
   justify-content: flex-end;
   align-items: center;
   margin-left: 10px;
+  width: 70%;
 }
+
+.burguer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width:100%;
+}
+
+
 /* Défintion de la div contenant la navigation qui apparait lorsque l'on clique sur le burguer */
 #wrap{
   display: flex;
@@ -662,4 +716,13 @@ footer h6{
 main{
   display: flex;
   flex-wrap: wrap;
+}
+
+@media (min-width:970px){
+  .navmenupc{
+    display: contents;
+  }
+  .navmenutel{
+    display: none;
+  }
 }
