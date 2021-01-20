@@ -73,7 +73,7 @@ svg{
   align-items: center;
   text-align: center;
   line-height: 140%;
-  padding: 5vh 7vw 8vw 7vw;
+  padding: 5vh 7vw;
 }
 /* SECTIONS */
 
@@ -384,6 +384,15 @@ header{
   width: 100%;
 }
 
+.next-destination{
+  width:80px;
+  margin-bottom: 18px;
+}
+
+.last-box h4{
+  font-size: 24px;
+}
+
 .three-boxs{
   filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.25));
   background-color: white;
@@ -444,7 +453,7 @@ header{
 
 .carousel{
   width: 115%;
-  margin: 20px 0px 120px 0px;
+  margin: 20px 0px 90px 0px;
 }
 
 .carousel-items {
