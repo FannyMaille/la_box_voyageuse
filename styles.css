@@ -547,6 +547,7 @@ footer{
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
+  flex-direction: row-reverse;
 }
 
 footer h6{
@@ -555,7 +556,7 @@ footer h6{
 
 .right-side, .left-side{
   margin-bottom: 30px;
-  width: 300px;
+  width: 100%;
 }
 
 .title-footer{
@@ -563,12 +564,16 @@ footer h6{
   justify-content: space-between;
   align-items: center;
   border-bottom: black 1px solid;
-  width: 300px;
+  width: 100%;
+}
+
+.title-footer ol{
+  display: none;
 }
 
 .newsletter-subscription{
   display: flex;
-  height: 7vh;
+  height: 45px;
   width: 100%;
 }
 
@@ -743,6 +748,38 @@ main{
   }
   h2{
     font-size: 200%;
+  }
+  .left-side{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 70%;
+  }
+  .right-side{
+    width: 30%;
+  }
+  .title-footer{
+    width: 30%;
+    border: none;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+  }
+  .icon-arrow-down-sign-to-navigate{
+    display: none;
+  }
+  .title-footer ol{
+    display: contents;
+    font-family: "Barlow Regular";
+  }
+  .title-footer li{
+    line-height: 240%;
+  }
+  .social-media {
+    font-size: 300%;
+    justify-content: space-around;
+    width: 30%;
+    margin-left: 70%;
   }
 }
 @media (min-width:850px){
