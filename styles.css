@@ -322,10 +322,16 @@ header{
   align-self: center;
   width: 100%;
 }
-.herofullimage .btnsubscribe{
+.buttonandarrow{
   grid-area: 5 / 1 / 6 / 6;
   justify-self: center;
-  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 3vh;
+}
+.icon-down-grid{
+  font-size: 200%;
 }
 
 .icon-down-arrow{
@@ -335,6 +341,7 @@ header{
   font-size: 200%;
   transform: translateX(-50%);
   z-index: 3;
+  display: none;
 }
 
 .fa-chevron-circle-down{
@@ -817,9 +824,13 @@ footer h6{
   .fullimage{
     grid-area: 1 / 2 / 6 / 6;
   }
-  .herofullimage .btnsubscribe{
+  .herofullimage {
+    height: 93vh;
+  }
+  .buttonandarrow{
     grid-area: 4 / 1 / 6 / 2;
     justify-self: flex-start;
+    padding-bottom: 0;
   }
   .team-text{
     width: 60%;
@@ -831,6 +842,12 @@ footer h6{
   }
   .team-explenations{
     width: 90%;
+  }
+  .icon-down-arrow{
+    display: contents;
+  }
+  .icon-down-grid{
+    display: none;
   }
 }
 
