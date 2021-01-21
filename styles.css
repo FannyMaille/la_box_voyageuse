@@ -844,7 +844,7 @@ footer h6{
     width: 90%;
   }
   .icon-down-arrow{
-    display: contents;
+    display: flex;
   }
   .icon-down-grid{
     display: none;
