@@ -60,13 +60,6 @@ svg{
 
 
 /* SECTIONS */
-.section{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 5vh 7vw;
-}
 .sectioncarroussel{
   display: flex;
   flex-direction: column;
@@ -297,7 +290,7 @@ header{
 
 .herofullimage{
   background-color:#FFF3DA;
-  height: 93vh;
+  height: 90vh;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -404,6 +397,11 @@ header{
   width: 50%;
   border-radius: 50%;
   margin-bottom: 3vh;
+}
+
+.concept h3, .text-introduction-concept, .cook-quality h3{
+  padding: 0 7vw;
+  width:100%
 }
 
 
@@ -552,8 +550,7 @@ header{
   display: flex;
   justify-content: space-evenly;
   font-size: 14px;
-  padding-right: 5vw;
-  padding-left: 5vw;
+  padding: 0 5vw;
   margin-bottom: 2vh;
 }
 .note-star{
@@ -770,35 +767,79 @@ footer h6{
 }
 
 
+/* ______________________________________________________________________________MEDIA QUERIES___________________________________________________________________________*/
 
 
-@media (min-width:1001px){
-  .allarticles{
+@media (min-width:500px)and (max-width:849px){
+  .fullimage{
+    align-self: flex-start;
+    max-height: 50VH;
+    width: auto;
+  }
+  .inside-box{
+    width:80%;
+  } 
+}
+
+@media (min-width:600px) and (max-width:1000px){
+  .line{
     width: 100%;
-    background-image: url(icones/pointille-desktop.svg);
+    padding: 0 7vw;
+  }
+  .first{
+    background-image: url(icones/poitillie-left.svg);
     background-size: cover;
     background-position: center;
-  } 
-  .line{
-    width: 50%;
-    flex-wrap: nowrap;
+  }
+  .second{
+    background-image: url(icones/poitillie-right.svg);
+    background-size: cover;
+    background-position: center;
+  }
+  .allarticles article {
+    width: 40%;
+  }
+  .allarticles{
+    padding: 0 0;
+  }
+
+  .carousel-item-box {
+    flex: 1 0 400px;
   }
 }
 
-@media (min-width:1024px) and (min-height:1366px){
+@media (min-width:850px){
   .fisrttitle{
-    grid-area: 1 / 1 / 2 / 6;
+    grid-area: 1 / 1 / 4 / 2;
+    text-align: left;
+    justify-self: flex-start;
   }
   .fullimage{
-    grid-area: 2 / 1 / 5 / 6;
-    justify-self: center;
-    align-self: center;
-    width: 100%;
+    grid-area: 1 / 2 / 6 / 6;
   }
   .herofullimage .btnsubscribe{
-    grid-area: 5 / 1 / 6 / 6;
-    justify-self: center;
-    margin-bottom: 15vh;
+    grid-area: 4 / 1 / 6 / 2;
+    justify-self: flex-start;
+  }
+  .team-text{
+    width: 60%;
+    text-align: left;
+    margin-left: 2vh;
+  } 
+  .img-team{
+    width: 30%;
+  }
+  .team-explenations{
+    width: 90%;
+  }
+}
+
+@media (min-width:850px)and (max-width:1410px){
+  .fisrttitle{
+    margin-left: 8vh;
+  }
+  .herofullimage .btnsubscribe{
+    margin-left: 8vh;
   }
 }
 
@@ -865,82 +906,23 @@ footer h6{
     width:50%;
     padding-left: 3vw;
   }
-}
-@media (min-width:850px){
-  .fisrttitle{
-    grid-area: 1 / 1 / 4 / 2;
-    text-align: left;
-    justify-self: flex-start;
-  }
-  .fullimage{
-    grid-area: 1 / 2 / 6 / 6;
-  }
-  .herofullimage .btnsubscribe{
-    grid-area: 4 / 1 / 6 / 2;
-    justify-self: flex-start;
-  }
-  .team-text{
-    width: 60%;
-    text-align: left;
-    margin-left: 2vh;
-  } 
-  .img-team{
-    width: 30%;
-  }
-  .team-explenations{
-    width: 90%;
-  }
-}
-@media (min-width:850px)and (max-width:1410px){
-  .fisrttitle{
-    margin-left: 8vh;
-  }
-  .herofullimage .btnsubscribe{
-    margin-left: 8vh;
-  }
-}
-
-@media (min-width:600px) and (max-width:1000px){
-  .line{
-    width: 100%;
-    padding: 0 7vw;
-  }
-  .first{
-    background-image: url(icones/poitillie-left.svg);
-    background-size: cover;
-    background-position: center;
-  }
-  .second{
-    background-image: url(icones/poitillie-right.svg);
-    background-size: cover;
-    background-position: center;
-  }
-  .allarticles article {
-    width: 40%;
-  }
-  .allarticles{
-    padding: 0 0;
-  }
-}
-
-@media (min-width:500px)and (max-width:850px){
-  .fullimage{
-    align-self: flex-start;
-    max-height: 50VH;
-    width: auto;
-  }
-  .inside-box{
-    width:80%;
-  } 
-}
-
-@media (min-width:630px) and (max-width:1000px){
-  .carousel-item-box {
-    flex: 1 0 400px;
+  .introduction-text{
+    font-size: 20px;
   }
 }
 
 @media (min-width:1001px){
+  .allarticles{
+    width: 100%;
+    background-image: url(icones/pointille-desktop.svg);
+    background-size: cover;
+    background-position: center;
+  } 
+  .line{
+    width: 50%;
+    flex-wrap: nowrap;
+  }
+
   .last-box .carousel{
     width: 100%;
   }
@@ -950,5 +932,22 @@ footer h6{
   }
   .carousel-item-notices{
     flex: 1 0 350px;
+  }
+}
+
+@media (min-width:1024px) and (min-height:1366px){
+  .fisrttitle{
+    grid-area: 1 / 1 / 2 / 6;
+  }
+  .fullimage{
+    grid-area: 2 / 1 / 5 / 6;
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+  }
+  .herofullimage .btnsubscribe{
+    grid-area: 5 / 1 / 6 / 6;
+    justify-self: center;
+    margin-bottom: 15vh;
   }
 }
