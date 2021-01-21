@@ -116,10 +116,14 @@ strong{
 /* TITRES ET TEXTES */
 
 /* BONTON S'ABONNER */
-.subscribemenu{
-  height: 35px;
+.subscribemenuphone{
+  padding: 1vh 0;
   width: 155px;
   font-size: 13px;
+}
+.subscribemenupc{
+  padding: 1.5vh 1vw;
+  font-size: 100%;
 }
 .subscribegeneral{
   height: 53px;
@@ -176,6 +180,117 @@ header{
 }
 .userandbasket li{
   margin-right: 2vw;
+}
+
+/* _____________NAVIGATION/MENU-POUR-GRAND-ECRAN__________*/
+/* Défintion de comment doit être le menu pour les grands écrans*/
+.navpc ol{
+  list-style: none;
+  display: flex;
+}
+.navpc li{
+  margin: 15px;
+  padding-right: 15px;
+  border-right: rgb(182, 180, 180) 1px solid;
+}
+
+.navmenupc ol a{
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.navmenupc ol a:hover{
+  color:#FF9900;
+  text-decoration: underline;
+}
+
+.navmenupc{
+  display: none;
+}
+
+
+/* _____________NAVIGATION/MENU-BURGUER-POUR-PETIT-ECRAN__________*/
+/* Au depart le menu burguer n'est pas ouvert donc la croix ne doit pas aparaitre */
+.croix{
+  display:none;
+}
+/* Défintion de la div contenant la navigation burguer*/
+.navmenutel{
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 10px;
+  width: 70%;
+}
+
+.burguer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width:100%;
+}
+
+/* Défintion de la div contenant la navigation qui apparait lorsque l'on clique sur le burguer */
+.wrap{
+  display: flex;
+  justify-content: center;
+  height: 98vh;
+  width: 100%;
+  background-color:#FF9900;
+  padding-top: 20px;
+}
+/* Défintion de la mise en page des liens */
+.wrap  a{
+  outline: none;
+  text-decoration: none;
+  color: white;
+}
+/* Défintion de la mise en page des liens au moment où l'on passe la souris dessus */
+.wrap a:hover, a:focus{
+  text-decoration: underline;
+  color: #FF9900;
+  text-underline-position: under;
+}
+/* Défintion de la mise en page de la navigation des liens*/
+.navtel ol{
+  list-style: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.navtel li{
+  margin-top:20px;
+}
+/* Défintion de la position d'originie de la div contenant la navigation */ 
+.wrap{
+  transform: translateY(-110vh);
+  position: absolute;
+  left: 0px;
+}
+/* Ne pas faire apparaitre la mise en page de base du bouton checkbox */ 
+#menutel{
+  display:none;
+}
+/* Lorsque mon bouton checkbox est cliqué donc checked il faut faire descendre la div contenant la navigation*/
+#menutel:checked ~ .wrap{
+  transform: translateY(1vh);
+}
+/* Par défault je veux que le symbole buguer soit visible mais pas celui de la croix */ 
+.burguer label>span{
+  display:none;
+}
+/* Lorsque mon bouton checkbox est cliqué donc checked il faut faire apparaitre la croix*/
+#menutel:checked ~ .burguer label>span{
+  display:block;
+  font-size:27px;
+  line-height:48px;
+  color: black;
+}
+/* Lorsque mon bouton checkbox est cliqué donc checked il faut faire disparaitre le symbole de burguer*/
+#menutel:checked ~ .burguer label>svg{
+  display:none;
 }
 
 /* ______________________________________________________________________________HERO_FULL_IMAGE___________________________________________________________________________*/
@@ -398,21 +513,17 @@ header{
   background-color: white;
   border-radius: 4px;
   width: 85%;
+  margin-left: 7%;
 }
 
 .img-three-boxs{
   width: 100%;
   border-radius: 4px;
-  margin-top: 5vw;
-  padding-right: 5vw;
-  padding-left: 5vw;
+  Padding: 20px 20px 0 20px;
 }
 
 .title-boxs, .box-prices, .box-destination{
-  padding-top: 2vh;
-  padding-bottom: 2vh;
-  padding-right: 5vw;
-  padding-left: 5vw;
+  padding:2vh 5vw;
   width: 100%;
 }
 
@@ -453,7 +564,7 @@ header{
 
 .carousel{
   width: 115%;
-  margin: 20px 0px 90px 0px;
+  margin: 2vh 0px 5vh 0px;
 }
 
 .carousel-items {
@@ -462,9 +573,12 @@ header{
   padding: 1rem 0;
   scroll-snap-type: x mandatory;
   list-style: none;
-  margin-left: 5%;
 }
-.carousel-item {
+.carousel-item-box {
+  flex: 1 0 280px;
+  scroll-snap-align: start;
+}
+.carousel-item-notices {
   flex: 1 0 270px;
   scroll-snap-align: start;
 }
@@ -554,6 +668,7 @@ hr{
   padding: 20px 20px;
   width: 85%;
   margin-top: 3vh;
+  margin-left: 8%;
 }
 
 /* ______________________________________________________________________________REASURE___________________________________________________________________________*/
@@ -655,119 +770,7 @@ footer h6{
 }
 
 
-/* _____________NAVIGATION/MENU-POUR-GRAND-ECRAN__________*/
-/* Défintion de comment doit être le menu pour les grands écrans*/
-.navpc ol{
-  list-style: none;
-  display: flex;
-}
-.navpc li{
-  margin: 15px;
-  padding-right: 15px;
-  border-right: rgb(182, 180, 180) 1px solid;
-}
 
-.navmenupc ol a{
-  color: black;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 14px;
-}
-
-.navmenupc ol a:hover{
-  color:#FF9900;
-  text-decoration: underline;
-}
-
-.navmenupc{
-  display: none;
-}
-
-
-
-
-/* _____________NAVIGATION/MENU-BURGUER-POUR-PETIT-ECRAN__________*/
-/* Au depart le menu burguer n'est pas ouvert donc la croix ne doit pas aparaitre */
-.croix{
-  display:none;
-}
-/* Défintion de la div contenant la navigation burguer*/
-.navmenutel{
-  justify-content: flex-end;
-  align-items: center;
-  margin-left: 10px;
-  width: 70%;
-}
-
-.burguer{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width:100%;
-}
-
-
-/* Défintion de la div contenant la navigation qui apparait lorsque l'on clique sur le burguer */
-.wrap{
-  display: flex;
-  justify-content: center;
-  height: 98vh;
-  width: 100%;
-  background-color:#FF9900;
-  padding-top: 20px;
-}
-/* Défintion de la mise en page des liens */
-.wrap  a{
-  outline: none;
-  text-decoration: none;
-  color: white;
-}
-/* Défintion de la mise en page des liens au moment où l'on passe la souris dessus */
-.wrap a:hover, a:focus{
-  text-decoration: underline;
-  color: #FF9900;
-  text-underline-position: under;
-}
-/* Défintion de la mise en page de la navigation des liens*/
-.navtel ol{
-  list-style: none;
-  position: relative;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.navtel li{
-  margin-top:20px;
-}
-/* Défintion de la position d'originie de la div contenant la navigation */ 
-.wrap{
-  transform: translateY(-110vh);
-  position: absolute;
-  left: 0px;
-}
-/* Ne pas faire apparaitre la mise en page de base du bouton checkbox */ 
-#menutel{
-  display:none;
-}
-/* Lorsque mon bouton checkbox est cliqué donc checked il faut faire descendre la div contenant la navigation*/
-#menutel:checked ~ .wrap{
-  transform: translateY(1vh);
-}
-/* Par défault je veux que le symbole buguer soit visible mais pas celui de la croix */ 
-.burguer label>span{
-  display:none;
-}
-/* Lorsque mon bouton checkbox est cliqué donc checked il faut faire apparaitre la croix*/
-#menutel:checked ~ .burguer label>span{
-  display:block;
-  font-size:27px;
-  line-height:48px;
-  color: black;
-}
-/* Lorsque mon bouton checkbox est cliqué donc checked il faut faire disparaitre le symbole de burguer*/
-#menutel:checked ~ .burguer label>svg{
-  display:none;
-}
 
 @media (min-width:1001px){
   .allarticles{
@@ -782,7 +785,7 @@ footer h6{
   }
 }
 
-@media (min-width:1024px)and (min-height:1366px){
+@media (min-width:1024px) and (min-height:1366px){
   .fisrttitle{
     grid-area: 1 / 1 / 2 / 6;
   }
@@ -862,9 +865,6 @@ footer h6{
     width:50%;
     padding-left: 3vw;
   }
-  .carousel-items {
-    overflow-x: hidden;
-  }
 }
 @media (min-width:850px){
   .fisrttitle{
@@ -932,4 +932,23 @@ footer h6{
   .inside-box{
     width:80%;
   } 
+}
+
+@media (min-width:630px) and (max-width:1000px){
+  .carousel-item-box {
+    flex: 1 0 400px;
+  }
+}
+
+@media (min-width:1001px){
+  .last-box .carousel{
+    width: 100%;
+  }
+  .last-box .carousel-items{
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .carousel-item-notices{
+    flex: 1 0 350px;
+  }
 }
