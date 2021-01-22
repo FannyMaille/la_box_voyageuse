@@ -348,14 +348,10 @@ header{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 8vh;
+  padding-bottom: 10vh;
 }
 .icon-down-grid{
   font-size: 200%;
-}
-
-.down-arrow-hero{
-  margin-top: 30px;
 }
 
 .icon-down-arrow{
