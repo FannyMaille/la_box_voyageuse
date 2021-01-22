@@ -47,6 +47,7 @@
 }
 html{
   scroll-behavior: smooth;
+  height: -webkit-fill-available;
 }
 
 body{
@@ -315,6 +316,8 @@ header{
   align-items: center;
   justify-content: center;
   display: flex;
+  min-height: 90vh;
+  min-height: -webkit-fill-available;
 }
 .grid-fullimage{
   display: grid; 
