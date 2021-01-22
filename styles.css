@@ -27,6 +27,20 @@
       url("/police/Barlow/ttf/Barlow-ExtraBold.ttf") format("truetype");
 }
 
+/* ______________________________________________________________________________ANIMATION___________________________________________________________________________*/
+
+@keyframes icon-down-arrow {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
 /* ______________________________________________________________________________DEFINITIONS GENERAL PARAMETERS___________________________________________________________________________*/
 * {
   box-sizing: border-box;
@@ -133,12 +147,14 @@ strong{
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 800;
+  transition: all .2s ease-in-out; 
 }
 
 .btnsubscribe:hover{
   background-color: white;
   border: #FF9900 2px solid;
   color: #FF9900;
+  transform: scale(1.1); 
 }
 
 /* BONTON S'ABONNER */
@@ -343,6 +359,9 @@ header{
   transform: translateX(-50%);
   z-index: 3;
   display: none;
+  -moz-animation: icon-down-arrow 2s infinite;
+  -webkit-animation: icon-down-arrow 2s infinite;
+  animation: icon-down-arrow 2s infinite;
 }
 
 .fa-chevron-circle-down{
@@ -872,10 +891,10 @@ footer h6{
   }
   .icon-menu svg{
     color:#FF9900;
+    transition: all .2s ease-in-out; 
   }
   .icon-menu svg:hover{
-    color:black;
-    size: ;
+    transform: scale(1.5); 
   }
   h1{
     font-size: 400%;
