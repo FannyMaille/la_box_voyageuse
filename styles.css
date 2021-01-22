@@ -771,6 +771,13 @@ footer h6{
   margin-bottom: 30px;
   width: 100%;
 }
+.left-side{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 70%;
+  display: none;
+}
 
 .title-footer{
   display: flex;
@@ -779,14 +786,14 @@ footer h6{
   border-bottom: black 1px solid;
   width: 100%;
 }
+.title-footer li{
+  line-height: 240%;
+}
+
 .titlenewslettre{
   text-transform: uppercase;
   font-weight: 700;
   line-height: 140%;
-}
-
-.title-footer ol{
-  display: none;
 }
 
 .newsletter-subscription{
@@ -829,6 +836,59 @@ footer h6{
 .social-media svg:hover{
   transform: scale(1.3); 
 }
+
+
+/* Accordion for the footer in mobile______________*/
+input[type=radio] {
+  display:none;
+}	
+.cadre-ex{
+  width: 100%;
+}
+.accordeon{	
+  display: grid; 
+  transition:grid-template-rows .4s ease-in-out;
+  grid-template-rows: 1fr 0;
+  overflow: hidden;	
+}
+.nav ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}  		
+.nav li a{
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: flex-start;
+  height: 2rem;
+  align-items: center;
+  padding-left: 2rem;
+}  
+.cadre-accordeon label{
+  cursor : pointer;
+  display: flex;
+  border-bottom: black 1px solid;
+  padding: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}		
+.cadre-accordeon label:before{
+  content: '↓';
+  margin-right: 1rem;
+}
+.cadre-accordeon input:checked ~ .accordeon label:before{	 
+  content:'→';
+}		
+.cadre-ex input:checked ~ .accordeon label,	
+.cadre-ex label:hover{
+  filter: saturate(220%);
+}		
+.cadre-accordeon input:checked ~  .accordeon {
+  grid-template-rows: 1fr 10rem;
+}
+
+
+
 
 
 /* ______________________________________________________________________________MEDIA QUERIES___________________________________________________________________________*/
@@ -939,19 +999,17 @@ footer h6{
   h2{
     font-size: 200%;
   }
-
   .price-list {
     width: 80%;
   }
   .price-list li p {
     font-size: 16px;
   }
-
+  .cadre-ex{
+    display: none;
+  }
   .left-side{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 70%;
   }
   .right-side{
     width: 30%;
@@ -962,15 +1020,6 @@ footer h6{
     align-items: flex-start;
     flex-direction: column;
     text-align: left;
-  }
-  .icon-arrow-down-sign-to-navigate{
-    display: none;
-  }
-  .title-footer ol{
-    display: contents;
-  }
-  .title-footer li{
-    line-height: 240%;
   }
   .social-media {
     font-size: 300%;
