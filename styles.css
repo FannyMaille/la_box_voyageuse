@@ -47,7 +47,6 @@
 }
 html{
   scroll-behavior: smooth;
-  height: -webkit-fill-available;
 }
 
 body{
@@ -316,8 +315,6 @@ header{
   align-items: center;
   justify-content: center;
   display: flex;
-  min-height: 90vh;
-  min-height: -webkit-fill-available;
 }
 .grid-fullimage{
   display: grid; 
@@ -351,10 +348,14 @@ header{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 3vh;
+  padding-bottom: 8vh;
 }
 .icon-down-grid{
   font-size: 200%;
+}
+
+.down-arrow-hero{
+  margin-top: 30px;
 }
 
 .icon-down-arrow{
