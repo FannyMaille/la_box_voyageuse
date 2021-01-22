@@ -130,6 +130,7 @@ strong{
   padding: 1vh 0;
   width: 155px;
   font-size: 13px;
+  margin: 2Vh;
 }
 .subscribemenupc{
   padding: 1.5vh 1vw;
@@ -175,11 +176,9 @@ header{
   align-items: center;
   justify-content: space-around;
 }
-
 .icon-Logo{
   font-size: 400%;
 }
-
 .userandbasket{
   display: flex;
   list-style: none;
@@ -195,8 +194,7 @@ header{
   margin-right: 2vw;
 }
 
-/* _____________NAVIGATION/MENU-POUR-GRAND-ECRAN__________*/
-/* Défintion de comment doit être le menu pour les grands écrans*/
+/*_NAVIGATION MENU FOR BIG SCREEN__________*/
 .navpc ol{
   list-style: none;
   display: flex;
@@ -206,66 +204,55 @@ header{
   padding-right: 20px;
   border-right: rgb(182, 180, 180) 1px solid;
 }
-
 .navmenupc ol a{
   color: black;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
 }
-
 .navmenupc ol a:hover{
   color:#FF9900;
   text-decoration: underline;
 }
-
 .navmenupc{
   display: none;
 }
 
 
-/* _____________NAVIGATION/MENU-BURGUER-POUR-PETIT-ECRAN__________*/
-/* Au depart le menu burguer n'est pas ouvert donc la croix ne doit pas aparaitre */
+/*_NAVIGATION MENU FOR SMALL SCREEN__________*/
 .croix{
   display:none;
 }
-/* Défintion de la div contenant la navigation burguer*/
 .navmenutel{
   justify-content: flex-end;
   align-items: center;
   margin-left: 10px;
   width: 70%;
 }
-
 .burguer{
   display: flex;
   align-items: center;
   justify-content: space-between;
   width:100%;
 }
-
-/* Défintion de la div contenant la navigation qui apparait lorsque l'on clique sur le burguer */
 .wrap{
   display: flex;
   justify-content: center;
-  height: 98vh;
+  height: 91vh;
   width: 100%;
   background-color:#FF9900;
   padding-top: 20px;
 }
-/* Défintion de la mise en page des liens */
 .wrap  a{
   outline: none;
   text-decoration: none;
   color: white;
 }
-/* Défintion de la mise en page des liens au moment où l'on passe la souris dessus */
 .wrap a:hover, a:focus{
   text-decoration: underline;
   color: #FF9900;
   text-underline-position: under;
 }
-/* Défintion de la mise en page de la navigation des liens*/
 .navtel ol{
   list-style: none;
   position: relative;
@@ -276,32 +263,26 @@ header{
 .navtel li{
   margin-top:20px;
 }
-/* Défintion de la position d'originie de la div contenant la navigation */ 
 .wrap{
-  transform: translateY(-110vh);
+  transform: translateY(-120vh);
   position: absolute;
   left: 0px;
 }
-/* Ne pas faire apparaitre la mise en page de base du bouton checkbox */ 
 #menutel{
   display:none;
 }
-/* Lorsque mon bouton checkbox est cliqué donc checked il faut faire descendre la div contenant la navigation*/
 #menutel:checked ~ .wrap{
-  transform: translateY(1vh);
+  transform: translateY(0vh);
 }
-/* Par défault je veux que le symbole buguer soit visible mais pas celui de la croix */ 
 .burguer label>span{
   display:none;
 }
-/* Lorsque mon bouton checkbox est cliqué donc checked il faut faire apparaitre la croix*/
 #menutel:checked ~ .burguer label>span{
   display:block;
   font-size:27px;
-  line-height:48px;
+  line-height:7vh;
   color: black;
 }
-/* Lorsque mon bouton checkbox est cliqué donc checked il faut faire disparaitre le symbole de burguer*/
 #menutel:checked ~ .burguer label>svg{
   display:none;
 }
@@ -1090,7 +1071,7 @@ input[type=radio] {
   }
   .herofullimage{
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0,0,0,0.3) 100%),
-                      url(images/hero-full-image.png);
+                      url(images/hero-full-image.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
@@ -1101,6 +1082,9 @@ input[type=radio] {
   }
   .fullimage{
     display: none;
+  }
+  header{
+    height: auto;
   }
 }
 
