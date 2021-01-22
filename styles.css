@@ -596,9 +596,13 @@ header{
   font-size: 14px;
   padding: 0 5vw;
   margin-bottom: 2vh;
+  align-items: center;
 }
 .note-star{
   color: #FF9900;
+}
+.number-notices p{
+  font-weight: normal;
 }
 
 /* Carroussel FOR 3 LAST BOX and NOTICES______________*/
