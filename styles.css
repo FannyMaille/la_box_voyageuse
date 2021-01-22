@@ -202,8 +202,8 @@ header{
   display: flex;
 }
 .navpc li{
-  margin: 15px;
-  padding-right: 15px;
+  margin: 10px;
+  padding-right: 20px;
   border-right: rgb(182, 180, 180) 1px solid;
 }
 
@@ -546,6 +546,16 @@ header{
   border-radius: 4px;
   width: 85%;
   margin-left: 7%;
+  transition: all .2s ease-in-out; 
+}
+
+.box{
+  text-decoration: none;
+  color: black;
+}
+.three-boxs:hover{
+  cursor: pointer;
+  transform: scale(0.9); 
 }
 
 .img-three-boxs{
@@ -765,6 +775,11 @@ footer h6{
   border-bottom: black 1px solid;
   width: 100%;
 }
+.titlenewslettre{
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 140%;
+}
 
 .title-footer ol{
   display: none;
@@ -774,6 +789,7 @@ footer h6{
   display: flex;
   height: 45px;
   width: 100%;
+  margin-top: 2vh;
 }
 
 .email{
