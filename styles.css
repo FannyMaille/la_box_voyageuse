@@ -793,6 +793,7 @@ footer h6{
 }
 .send:hover{
   background-color:#ffcc5e; 
+  cursor: pointer;
 }
 
 .social-media{
